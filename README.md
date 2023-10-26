@@ -1,4 +1,4 @@
-# cat_vs_dog_classifier
+# cat-vs-dog-classifier
 
 
 ## Table of Contents
