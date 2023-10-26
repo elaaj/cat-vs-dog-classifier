@@ -19,22 +19,22 @@ The Python programs included are:
 
 ## Installation
 
-To run the Python algorithms ther
+To run the Python training algorithm and the Demo notebook there are some requirements:
 
 - Python 3.
 - The following python modules:
   - matplotlib
-  - opencv-python
-  - numpy
-  - sklearn
+  - PIL
+  - torch
+  - torchvision
+  - albumentations
  
-Also, the "data" folder must be placed outside of the folder containing all the algorithms, or the path in the main file must be adapted to the new data location.
+The Pytorch checkpoint is not included for purposes of space, but it can be easily reproduced through the given algorithm, which does run for 3 brief epochs. At the current time the algorithm is devised to run only on CUDA-GPUs, so if you want to run it on CPU you must modify the device used by PyTorch in the code.
+The dataset is provided [here](https://www.kaggle.com/competitions/dog-vs-cat-classification/overview), and should be placed in a folder named **DATASET**. In addition, the original folders of the **train** and **test** datasets contain 'wrapper' folders, which have the same name as the parent folder, so I decided to remove them for simplicity's sake, and so should you, otherwise you will have to edit the main code and the demo code.
 
 ## Usage
 
 The main notebook can be run from any IDE which supports Jupyter Notebooks, whereas to run the Python algorithms a terminal or a suitable IDE are required.
-
-
 
 ```bash
 git clone https://github.com/elaaj/cat-vs-dog-classifier
